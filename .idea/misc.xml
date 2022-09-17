@@ -3,7 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/valt_/AndroidStudioProjects/kotlin_study_apps/Perfil_Investidor/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/valt_/AndroidStudioProjects/kotlin_study_apps/Perfil_Investidor/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/valt_/AndroidStudioProjects/kotlin_study_apps/Perfil_Investidor/app/src/main/res/layout/activity_questions.xml" value="0.33" />
         <entry key="..\:/Users/valt_/AndroidStudioProjects/kotlin_study_apps/Perfil_Investidor/app/src/main/res/layout/activity_splash_loadin.xml" value="0.33" />
         <entry key="..\:/Users/valt_/AndroidStudioProjects/kotlin_study_apps/Perfil_Investidor/app/src/main/res/layout/fragment_complete.xml" value="0.20416666666666666" />
@@ -12,8 +12,8 @@
         <entry key="..\:/Users/valt_/AndroidStudioProjects/kotlin_study_apps/Perfil_Investidor/app/src/main/res/layout/fragment_question11.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/valt_/AndroidStudioProjects/kotlin_study_apps/Perfil_Investidor/app/src/main/res/layout/fragment_question3.xml" value="0.33" />
         <entry key="..\:/Users/valt_/AndroidStudioProjects/kotlin_study_apps/Perfil_Investidor/app/src/main/res/layout/fragment_question4.xml" value="0.5" />
-        <entry key="..\:/Users/valt_/AndroidStudioProjects/kotlin_study_apps/Perfil_Investidor/app/src/main/res/layout/fragment_question5.xml" value="0.5" />
-        <entry key="..\:/Users/valt_/AndroidStudioProjects/kotlin_study_apps/Perfil_Investidor/app/src/main/res/layout/fragment_question6.xml" value="0.5" />
+        <entry key="..\:/Users/valt_/AndroidStudioProjects/kotlin_study_apps/Perfil_Investidor/app/src/main/res/layout/fragment_question5.xml" value="0.25" />
+        <entry key="..\:/Users/valt_/AndroidStudioProjects/kotlin_study_apps/Perfil_Investidor/app/src/main/res/layout/fragment_question6.xml" value="0.25" />
         <entry key="..\:/Users/valt_/AndroidStudioProjects/kotlin_study_apps/Perfil_Investidor/app/src/main/res/layout/fragment_question7.xml" value="0.33" />
         <entry key="..\:/Users/valt_/AndroidStudioProjects/kotlin_study_apps/Perfil_Investidor/app/src/main/res/layout/fragment_question8.xml" value="0.33" />
         <entry key="..\:/Users/valt_/AndroidStudioProjects/kotlin_study_apps/Perfil_Investidor/app/src/main/res/layout/fragment_question9.xml" value="0.25" />

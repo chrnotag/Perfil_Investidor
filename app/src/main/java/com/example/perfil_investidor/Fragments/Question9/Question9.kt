@@ -10,8 +10,10 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.setFragmentResult
 import androidx.fragment.app.setFragmentResultListener
 import androidx.navigation.Navigation
+import androidx.navigation.fragment.navArgs
 import com.example.perfil_investidor.Activities.Questions
 import com.example.perfil_investidor.Fragments.Question1.Question1ViewModel
+import com.example.perfil_investidor.Fragments.Question2.Quest2Directions
 import com.example.perfil_investidor.R
 import com.example.perfil_investidor.databinding.FragmentQuestion9Binding
 
@@ -21,9 +23,6 @@ class Question9 : Fragment() {
         fun newInstance() = Question9()
     }
 
-    private var pontuacao = 0
-
-    private var result = 0
 
     private var _binding: FragmentQuestion9Binding? = null
 
@@ -31,15 +30,13 @@ class Question9 : Fragment() {
 
     private val binding get() = _binding!!
 
+    private val args: Question9Args by navArgs()
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentQuestion9Binding.inflate(inflater, container, false)
-
-        setFragmentResultListener("key") { key, bundle ->
-            result = bundle.getInt("bundleKey")
-        }
 
         Responder()
 
@@ -47,48 +44,41 @@ class Question9 : Fragment() {
     }
 
     fun Responder() {
+
+        val pts = args.result
+
         binding.checkBoxA.setOnClickListener {
             if (binding.checkBoxA.isChecked) {
-                pontuacao = 0
-                setFragmentResult("key", bundleOf("bundleKey" to (pontuacao + result)))
-                Navigation.findNavController(binding.root)
-                    .navigate(R.id.action_question9_to_complete)
+                val action = Question9Directions.actionQuestion9ToComplete(pts)
+                println("teste $pts")
             }
         }
 
         binding.checkBoxB.setOnClickListener {
-            if (binding.checkBoxB.isChecked) {
-                pontuacao = 1
-                setFragmentResult("key", bundleOf("bundleKey" to (pontuacao + result)))
-                Navigation.findNavController(binding.root)
-                    .navigate(R.id.action_question9_to_complete)
+            if (binding.checkBoxC.isChecked) {
+                val action = Question9Directions.actionQuestion9ToComplete(1 + pts)
+                Navigation.findNavController(binding.root).navigate(action)
             }
         }
 
         binding.checkBoxC.setOnClickListener {
-            if (binding.checkBoxC.isChecked) {
-                pontuacao = 2
-                setFragmentResult("key", bundleOf("bundleKey" to (pontuacao + result)))
-                Navigation.findNavController(binding.root)
-                    .navigate(R.id.action_question9_to_complete)
+            if (binding.checkBoxB.isChecked) {
+                val action = Question9Directions.actionQuestion9ToComplete(2 + pts)
+                Navigation.findNavController(binding.root).navigate(action)
             }
         }
 
         binding.checkBoxD.setOnClickListener {
             if (binding.checkBoxD.isChecked) {
-                pontuacao = 4
-                setFragmentResult("key", bundleOf("bundleKey" to (pontuacao + result)))
-                Navigation.findNavController(binding.root)
-                    .navigate(R.id.action_question9_to_complete)
+                val action = Question9Directions.actionQuestion9ToComplete(4 + pts)
+                Navigation.findNavController(binding.root).navigate(action)
             }
         }
 
         binding.checkBoxE.setOnClickListener {
             if (binding.checkBoxE.isChecked) {
-                pontuacao = 5
-                setFragmentResult("key", bundleOf("bundleKey" to (pontuacao + result)))
-                Navigation.findNavController(binding.root)
-                    .navigate(R.id.action_question9_to_complete)
+                val action = Question9Directions.actionQuestion9ToComplete(5 + pts)
+                Navigation.findNavController(binding.root).navigate(action)
             }
         }
     }

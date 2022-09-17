@@ -1,5 +1,6 @@
 package com.example.perfil_investidor.Activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
@@ -30,7 +31,6 @@ class Questions : AppCompatActivity() {
 
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.fragView) as NavHostFragment
-
 
         val navController: NavController = navHostFragment.navController
 

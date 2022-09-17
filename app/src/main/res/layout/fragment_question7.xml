@@ -42,23 +42,10 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:text="Conto com o rendimento dessas aplicações para complementar minha renda mensal "
-        app:layout_constraintBottom_toTopOf="@+id/checkBoxC"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-    <CheckBox
-        android:id="@+id/checkBoxC"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:text="Aumento gradual do capital ao longo do tempo, assumindo riscos moderados"
         app:layout_constraintBottom_toTopOf="@+id/checkBoxD"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBoxA" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <CheckBox
         android:id="@+id/checkBoxB"
@@ -71,10 +58,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBoxD" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxC" />
 
     <CheckBox
-        android:id="@+id/checkBoxD"
+        android:id="@+id/checkBoxC"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -84,6 +71,20 @@
         app:layout_constraintBottom_toTopOf="@+id/checkBoxB"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBoxC" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxD" />
+
+    <CheckBox
+        android:id="@+id/checkBoxD"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="Aumento gradual do capital ao longo do tempo, assumindo riscos moderados"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxA" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

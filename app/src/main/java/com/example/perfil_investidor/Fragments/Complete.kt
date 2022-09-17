@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.setFragmentResultListener
+import androidx.navigation.fragment.navArgs
 import com.example.perfil_investidor.Activities.Resultado
 import com.example.perfil_investidor.R
 import com.example.perfil_investidor.databinding.FragmentCompleteBinding
@@ -24,7 +25,7 @@ class Complete : Fragment() {
 
     private val binding get() = _binding!!
 
-    var result = 0
+    private val args: CompleteArgs by navArgs()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -34,13 +35,9 @@ class Complete : Fragment() {
 
         activity?.actionBar?.title = "Fim do teste"
 
-        setFragmentResultListener("key"){key, bundle ->
-            result = bundle.getInt("bundleKey")
-        }
-
         binding.button.setOnClickListener {
             val intent = Intent(context, Resultado::class.java)
-            intent.putExtra("intent", result)
+            intent.putExtra("intent", args.result)
             startActivity(intent)
             activity?.finishAffinity()
         }

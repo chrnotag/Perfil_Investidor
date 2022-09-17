@@ -11,6 +11,7 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.setFragmentResult
 import androidx.navigation.NavDirections
 import androidx.navigation.Navigation
+import androidx.navigation.fragment.navArgs
 import com.example.perfil_investidor.Activities.Questions
 import com.example.perfil_investidor.R
 import com.example.perfil_investidor.databinding.FragmentQuestion1Binding
@@ -20,8 +21,6 @@ class Question1 : Fragment() {
     companion object {
         fun newInstance() = Question1()
     }
-
-    private var pontuacao = 0
 
     private var _binding: FragmentQuestion1Binding? = null
 
@@ -41,39 +40,33 @@ class Question1 : Fragment() {
 
     }
 
-    fun Responder(){
+    fun Responder() {
 
         binding.checkBoxA.setOnClickListener {
             if (binding.checkBoxA.isChecked) {
-                Navigation.findNavController(binding.root).navigate(R.id.action_question1_to_quest2)
-                pontuacao = 0
-                viewModel.resultado.value = pontuacao
-                setFragmentResult("key", bundleOf("bundleKey" to pontuacao))
+                val action = Question1Directions.actionQuestion1ToQuest2(0)
+                Navigation.findNavController(binding.root).navigate(action)
             }
         }
 
         binding.checkBoxB.setOnClickListener {
             if (binding.checkBoxB.isChecked) {
-                Navigation.findNavController(binding.root).navigate(R.id.action_question1_to_quest2)
-                pontuacao = 2
-                viewModel.resultado.value = pontuacao
-                setFragmentResult("key", bundleOf("bundleKey" to pontuacao))
+                val action = Question1Directions.actionQuestion1ToQuest2(2)
+                Navigation.findNavController(binding.root).navigate(action)
             }
         }
 
         binding.checkBoxC.setOnClickListener {
             if (binding.checkBoxC.isChecked) {
-                Navigation.findNavController(binding.root).navigate(R.id.action_question1_to_quest2)
-                pontuacao = 3
-                setFragmentResult("key", bundleOf("bundleKey" to pontuacao))
+                val action = Question1Directions.actionQuestion1ToQuest2(3)
+                Navigation.findNavController(binding.root).navigate(action)
             }
         }
 
         binding.checkBoxD.setOnClickListener {
             if (binding.checkBoxD.isChecked) {
-                Navigation.findNavController(binding.root).navigate(R.id.action_question1_to_quest2)
-                pontuacao = 4
-                setFragmentResult("key", bundleOf("bundleKey" to pontuacao))
+                val action = Question1Directions.actionQuestion1ToQuest2(4)
+                Navigation.findNavController(binding.root).navigate(action)
             }
         }
     }
