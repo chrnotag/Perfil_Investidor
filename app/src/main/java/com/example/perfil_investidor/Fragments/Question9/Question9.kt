@@ -55,14 +55,14 @@ class Question9 : Fragment() {
         }
 
         binding.checkBoxB.setOnClickListener {
-            if (binding.checkBoxC.isChecked) {
+            if (binding.checkBoxB.isChecked) {
                 val action = Question9Directions.actionQuestion9ToComplete(1 + pts)
                 Navigation.findNavController(binding.root).navigate(action)
             }
         }
 
         binding.checkBoxC.setOnClickListener {
-            if (binding.checkBoxB.isChecked) {
+            if (binding.checkBoxC.isChecked) {
                 val action = Question9Directions.actionQuestion9ToComplete(2 + pts)
                 Navigation.findNavController(binding.root).navigate(action)
             }

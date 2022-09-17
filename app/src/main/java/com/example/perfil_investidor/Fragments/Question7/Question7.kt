@@ -55,7 +55,7 @@ class Question7 : Fragment() {
         }
 
         binding.checkBoxB.setOnClickListener {
-            if (binding.checkBoxD.isChecked) {
+            if (binding.checkBoxB.isChecked) {
                 val action = Question7Directions.actionQuestion7ToQuestion8(2 + pts)
                 Navigation.findNavController(binding.root).navigate(action)
             }
@@ -69,7 +69,7 @@ class Question7 : Fragment() {
         }
 
         binding.checkBoxD.setOnClickListener {
-            if (binding.checkBoxB.isChecked) {
+            if (binding.checkBoxD.isChecked) {
                 val action = Question7Directions.actionQuestion7ToQuestion8(4 + pts)
                 Navigation.findNavController(binding.root).navigate(action)
             }
