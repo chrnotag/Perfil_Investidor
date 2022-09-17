@@ -52,14 +52,14 @@ class Question8 : Fragment() {
             }
         }
 
-        binding.checkBoxB.setOnClickListener {
+        binding.checkBoxC.setOnClickListener {
             if (binding.checkBoxD.isChecked) {
                 val action = Question8Directions.actionQuestion8ToQuestion9(1 + pts)
                 Navigation.findNavController(binding.root).navigate(action)
             }
         }
 
-        binding.checkBoxC.setOnClickListener {
+        binding.checkBoxD.setOnClickListener {
             if (binding.checkBoxC.isChecked) {
                 val action = Question8Directions.actionQuestion8ToQuestion9(2 + pts)
                 Navigation.findNavController(binding.root).navigate(action)

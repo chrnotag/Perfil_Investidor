@@ -57,12 +57,11 @@ class Question5 : Fragment() {
         binding.checkBoxC.setOnClickListener {
             if (binding.checkBoxC.isChecked) {
                 val action = Question5Directions.actionQuestion5ToQuestion6(2 + pts)
-                println("teste $pts")
                 Navigation.findNavController(binding.root).navigate(action)
             }
         }
 
-        binding.checkBoxC.setOnClickListener {
+        binding.checkBoxD.setOnClickListener {
             if (binding.checkBoxD.isChecked) {
                 val action = Question5Directions.actionQuestion5ToQuestion6(4 + pts)
                 Navigation.findNavController(binding.root).navigate(action)

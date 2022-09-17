@@ -6,8 +6,12 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.lifecycle.Observer
 import androidx.navigation.NavController
+import androidx.navigation.Navigation
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
+import com.example.perfil_investidor.Fragments.Question1.Question1
+import com.example.perfil_investidor.Fragments.Question1.Question1Args
+import com.example.perfil_investidor.Fragments.Question1.Question1Directions
 import com.example.perfil_investidor.Fragments.Question1.Question1ViewModel
 import com.example.perfil_investidor.R
 import com.example.perfil_investidor.databinding.ActivityQuestionsBinding
