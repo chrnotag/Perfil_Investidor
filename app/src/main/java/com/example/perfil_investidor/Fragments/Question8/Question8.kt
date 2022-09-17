@@ -49,25 +49,26 @@ class Question8 : Fragment() {
         binding.checkBoxA.setOnClickListener {
             if (binding.checkBoxA.isChecked) {
                 val action = Question8Directions.actionQuestion8ToQuestion9(pts)
+                Navigation.findNavController(binding.root).navigate(action)
             }
         }
 
         binding.checkBoxC.setOnClickListener {
-            if (binding.checkBoxD.isChecked) {
+            if (binding.checkBoxC.isChecked) {
                 val action = Question8Directions.actionQuestion8ToQuestion9(1 + pts)
                 Navigation.findNavController(binding.root).navigate(action)
             }
         }
 
         binding.checkBoxD.setOnClickListener {
-            if (binding.checkBoxC.isChecked) {
+            if (binding.checkBoxD.isChecked) {
                 val action = Question8Directions.actionQuestion8ToQuestion9(2 + pts)
                 Navigation.findNavController(binding.root).navigate(action)
             }
         }
 
         binding.checkBoxB.setOnClickListener {
-            if (binding.checkBoxD.isChecked) {
+            if (binding.checkBoxB.isChecked) {
                 val action = Question8Directions.actionQuestion8ToQuestion9(4 + pts)
                 Navigation.findNavController(binding.root).navigate(action)
             }
